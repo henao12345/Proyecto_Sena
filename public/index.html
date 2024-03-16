@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./images/istockphoto-1366052585-612x612.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Iniciar sesión</h1>
+        <form action="/authenticate" method="POST">
+            <h2>Inicio</h2>
+            <div class="section">
+                <div class="title">Username</div>
+                <div class="field"><input type="text" id="username" name="username"></div>
+            </div>
+            <div class="section">
+                <div class="title">Password</div>
+                <div class="field"><input type="text" id="password" name="password"></div>
+            </div>
+            <div class="section">
+                <div class="button"><input type="submit" value="login"></div>
+                <div class="button"><a href="signup.html">Registrarse</a></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
